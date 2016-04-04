@@ -10,6 +10,7 @@ File:		main.cpp
 int main(int argc, char* argv[])
 {
 	ifstream fin;
-	SceneGraph* sceneGraph = SceneGraph::factory(fin, "scene1.txt");
+	SceneGraph* sceneGraph = SceneGraph::factory(fin, "scene2.txt");
+	sceneGraph->printGraph();
 	return 0;
 }
