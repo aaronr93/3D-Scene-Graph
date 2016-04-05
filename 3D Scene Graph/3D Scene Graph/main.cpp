@@ -12,5 +12,6 @@ int main(int argc, char* argv[])
 	ifstream fin;
 	SceneGraph* sceneGraph = SceneGraph::factory(fin, "scene2.txt");
 	sceneGraph->printGraph();
+	sceneGraph->traverse();
 	return 0;
 }
